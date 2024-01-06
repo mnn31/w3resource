@@ -1,16 +1,3 @@
-#34,35,37
-
-def get_prime_34(limit):
-    li = list()
-    for num in range(2, int(limit) + 1):
-        li.append(num)
-    for num in li:
-        for check_num in li:
-            if num == check_num:
-                continue
-            elif check_num % num == 0:
-                li.remove(check_num)
-    return li
 
 
 def prod_odd_35(num):
@@ -22,11 +9,8 @@ def prod_odd_35(num):
     return prod
     
 ### MAIN PROGRAM
-## 34
-inp = input("Max number: ")
-print(get_prime_34(inp))
-
 ##35
-num = input("Number: ")
-print(f'The product of all odd numbers in {num} is {prod_odd_35(num)}')
+while True:
+    num = input("Number: ")
+    print(f'The product of all odd numbers in {num} is {prod_odd_35(num)}')
 
